@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="test.css" />
+		<script src="jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="test.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="demo1">
+			<p style="padding-bottom: 15px;"><span style="font-size: 20px;">招聘职位</span><span style="float: right; position: relative; top: 13px;" id="clear">清空</span><br /></p><hr />
+			<form action="" method="get">
+				<div id="dome">
+					<div style="margin-bottom: 5px;" class="wrap">
+						<p class="p_demo"><input type="checkbox" id="checkbox_a1" class="chk_1" /><label for="checkbox_a1"></label><span id="p1"><strong>工程研发部门</strong> <span id="jiantou"><strong>∧</strong></span><span class="circle" id="add_a" style="float: right;">xx</span></span></p>
+					</div>
+					<div id="div1" class="wrap">
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_a2" class="chk_1" /><label for="checkbox_a2"></label>Mac开发工程师  <span id="add_a1" style="float: right;">9</span>
+						</label></p>
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_a3" class="chk_1" /><label for="checkbox_a3"></label>iOS APP测试工程师<span id="add_a2" style="float: right;">17</span>
+						</label></p>
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_a4" class="chk_1" /><label for="checkbox_a4"></label>Android远程控制工程师<span id="add_a3" style="float: right;">61</span>
+						</label></p>
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_a5" class="chk_1" /><label for="checkbox_a5"></label>Web前端工程师<span id="add_a4" style="float: right;">31</span>
+						</label></p>
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_a6" class="chk_1" /><label for="checkbox_a6"></label>Android多媒体软件开发工程师<span id="add_a5" style="float: right;">2</span>
+						</label></p>
+					</div>
+					
+					<div style="margin-top: 10px;margin-bottom: 5px;" class="wrap">
+						<p class="p_demo"><input type="checkbox" id="checkbox_b1" class="chk_1" /><label for="checkbox_b1"></label><span id="p2"><strong>产品研发部门</strong> <span id="jiantou2"><strong>∧</strong></span><span class="circle" id="add_b" style="float: right;">x</span></span></p>
+					</div>
+					<div id="div2" class="wrap">
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_b2" class="chk_1" /><label for="checkbox_b2"></label>网页设计师<span id="add_b1" style="float: right;">47</span>
+						</label></p>
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_b3" class="chk_1" /><label for="checkbox_b3"></label>ID/工业设计师 <span id="add_b2" style="float: right;">39</span>
+						</label></p>
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_b3" class="chk_1" /><label for="checkbox_b3"></label>视觉设计师/GUI界面设计师<span id="add_b3" style="float: right;">42</span>
+						</label></p>
+						<p class="p_demo"><label><input type="checkbox" id="checkbox_b3" class="chk_1" /><label for="checkbox_b3"></label>平面设计师<span id="add_b4" style="float: right;">8</span>
+						</label></p>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+		<script>
+			var add_a1=document.getElementById("add_a1").innerHTML;
+			var a=parseInt(add_a1);
+			var add_a2=document.getElementById("add_a2").innerHTML;
+			var b=parseInt(add_a2);
+			var add_a3=document.getElementById("add_a3").innerHTML;
+			var c=parseInt(add_a3);
+			var add_a4=document.getElementById("add_a4").innerHTML;
+			var d=parseInt(add_a4);
+			var add_a5=document.getElementById("add_a5").innerHTML;
+			var e=parseInt(add_a5);
+			var add1=a+b+c+d+e;
+			document.getElementById("add_a").innerHTML=add1;
+			
+			var add_b1=document.getElementById("add_b1").innerHTML;
+			var f=parseInt(add_b1);
+			var add_b2=document.getElementById("add_b2").innerHTML;
+			var g=parseInt(add_b2);
+			var add_b3=document.getElementById("add_b3").innerHTML;
+			var h=parseInt(add_b3);
+			var add_b4=document.getElementById("add_b4").innerHTML;
+			var i=parseInt(add_b4);
+			var add2=f+g+h+i;
+			document.getElementById("add_b").innerHTML=add2;
+		</script>
+	</body>
+</html>
